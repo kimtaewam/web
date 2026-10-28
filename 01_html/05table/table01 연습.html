@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표(table) 만들기</title>
+</head>
+
+<body>
+  <table>
+    <style>
+      table, th,td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+      }
+      th, td{
+        padding: 10px 20px;
+      }
+    </style>
+    <caption>개인 정보
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>성별</th>
+    </tr>
+    <tr>
+      <th>만춘</th>
+      <td>123살</td>
+      <td rowspan="3">사람</td>
+    </tr>
+    <tr>
+      <th>춘식</th>
+      <td>1123살</td>
+    </tr>
+    <tr>
+      <th>명춘</th>
+      <td>43563살</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <th colspan="3">비고</th>
+      </tr>
+    </tfoot>
+    </caption>
+
+  </table>
+</body>
+
+</html>

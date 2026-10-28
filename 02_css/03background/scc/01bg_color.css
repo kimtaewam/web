@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&family=Yeon+Sung&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: blueviolet;
+}
+.container{
+  width: 500px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul{
+  list-style: none;
+}
+/* 1. hsl / 2.rgb / 3.16진수/ 4.rgba  구글웹폰트 4개 */
+.ul1{background-color: hsl(100, 80%, 50%); font-family: "Nanum Brush Script", cursive;;}
+.ul2{background-color: rgb(123 156 212 / 0.7); font-family: "Dongle", sans-serif;}
+.ul3{background-color: #B84949; font-family: "Black Han Sans", sans-serif;}
+.ul4{background-color: rgba(70, 177, 49, 0.8); font-family: "Yeon Sung", system-ui;}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-self</title>
+  <link rel="stylesheet" href="defailt.css">
+  <style>
+    .flex_container {
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex_item:nth-child(2) {
+      align-self: auto;/* 부모의 얼라인아이템을 따라감 */
+      align-self: stretch;/* 늘리기 */
+      align-self: flex-start;/* 시작점으로 */
+      align-self: flex-end;/* 끝점으로 */
+      align-self: baseline;
+      align-self: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex_container">
+    <div class="flex_item">aaaaaaaaaaaaaaa</div>
+    <div class="flex_item">bbb</div>
+    <div class="flex_item">cccccccc</div>
+  </div>
+</body>
+
+</html>

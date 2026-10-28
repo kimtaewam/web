@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>automragin</title>
+  <link rel="stylesheet" href="defailt.css">
+  <style>
+    .flex_container{
+      display: flex;
+    }
+    .container{
+      flex-direction: column;
+      background: pink;
+      margin-top: 200px;
+      height: 800px;
+    }
+    .flex_itme{
+      flex-basis: 150px;
+    }
+    .flex_itme:last-child{
+      margin-left: auto;
+    }
+    .container2 .flex_itme:last-child{
+      margin-left: 0;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex_container">
+    <div class="flex_itme">a</div>
+    <div class="flex_itme">b</div>
+    <div class="flex_itme">c</div>
+  </div>
+    <div class="flex_container container2">
+    <div class="flex_itme">a</div>
+    <div class="flex_itme">b</div>
+    <div class="flex_itme">c</div>
+  </div>
+</body>
+</html>

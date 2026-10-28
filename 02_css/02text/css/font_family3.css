@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gasoek+One&family=Gugi&family=Moirai+One&display=swap');
+
+.w_font1{font-family: "Dongle", sans-serif;}
+.w_font2{font-family: "Gasoek One", sans-serif;}
+.w_font3{font-family: "Gugi", sans-serif;}
+.w_font4{font-family: "Moirai One", system-ui;}

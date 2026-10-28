@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&family=Yeon+Sung&display=swap');
+
+*{margin: 0; padding: 0;}
+.container{width: 500px;margin: 10px auto;
+border: 1px solid #ccc;padding: 10px}
+
+.container ul{padding: 50px; border: 5px dotted #1a1a1a; background-color: lightcoral;}
+
+/* ul list-style 다 다르게 */
+.con1 ul{list-style: circle;}
+.con2 ul{list-style: disc;}
+.con3 ul{list-style: lower-alpha;}
+.con4 ul{list-style: lower-latin;}
+
+/* h2 폰트 다 다르게 / 백그라운드 컬러 다 다르게, 폰트 컬러 선택 */
+.con1>h2{font-family: "Nanum Brush Script", cursive; background-color:  #238; color: rgb(160 226 245 / 1);}
+.con2>h2{font-family: "Dongle", sans-serif; background-color: #232; color: rgb(102 145 50 / 0.6);}
+.con3>h2{ font-family: "Black Han Sans", sans-serif; background-color: #fff, rgb(169 47 47 / 1);}
+.con4>h2{ font-family: "Yeon Sung", system-ui; background-color: #669132; color: aqua;}

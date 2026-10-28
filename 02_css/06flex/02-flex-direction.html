@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-direction</title>
+  <link rel="stylesheet" href="defailt.css">
+  <style>
+    .flex_container{
+      display: flex;
+      flex-direction: row;/* 기본 값 : 아이템들이 횡방향으로 배치 */
+      flex-direction: column;/* 아이템들이 열 세로 방향으로 배치 */
+      flex-direction: row-reverse;/* 아이템들이 역순으로 가로 배치 */
+      flex-direction: column-reverse;/* 아이템들이 역슨으로 세로 배치 */
+      flex-direction: row;
+      gap: 10px;/* 아이템간 간격 */
+    }
+  </style>
+</head>
+<body>
+    <div class="flex_container">
+    <div class="flex_item">asdasd</div>
+    <div class="flex_item">dsadsa</div>
+    <div class="flex_item">qweqwe</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>width height 속성</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    div {
+      border: 1px solid #333;
+      margin-bottom: 16px;
+      padding: 10px;
+    }
+
+    .box1 {
+      background: orange;
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      line-height: 70px;
+    }
+
+    .box2 {
+      background: green;
+      width: 50%;
+      height: 50%;
+    }
+
+    .box3 {
+      background: blue;
+      height: 80px;
+    }
+
+    .box4 {
+      background: red;
+      height: 1000px;
+    }
+
+    .box4_1 {
+      background: yellowgreen;
+      width: 50%;
+      height: 40%;
+    }
+    .vwwh{
+      background: skyblue;
+      width: 50vw;
+      height: 20vh;
+    }
+    .parent{
+      border:5px dotted #444 ;
+      width: 40vw;
+    }
+    .min_content{
+      background: red;
+      width: min-content;
+    }
+    .max_content{
+      background: green;
+      width: max-content;
+    }
+    .fit_content{
+      background: yellow;
+      width: fit-content;
+    }
+    .calc{
+      background: tan;
+      width: calc(100% - 80px);
+    }
+    .clamp{
+      background: plum;
+      width: clamp(300px, 50vw, 500px);
+    }
+  </style>
+</head>
+
+<body>
+  <h2>width height 속성</h2>
+  <p>실제 콘텐츠 영역의 크기 지정</p>
+  <div class="box1">박스1</div>
+  <div class="box2">박스2</div>
+  <div class="box3"></div>
+  <div class="box4">
+    <div class="box4_1"></div>
+  </div>
+  <div class="vwwh">뷰포트 너비/높이를 기준으로 크기를 지정합니다.</div>
+  <div class="parent">
+    <div class="min_content">Frontend Development Class</div>
+    <div class="max_content">Frontend Development Class</div>
+    <div class="fit_content">Frontend Development Class</div>
+  </div>
+  <div class="calc">clac():계산식을 사용해 크기를 지정합니다</div>
+  <div class="clamp">clamp():최소값,선호값, 최대값을 함께 지정합니다.</div>
+</body>
+
+</html>

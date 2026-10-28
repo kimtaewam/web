@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-basis</title>
+  <link rel="stylesheet" href="defailt.css">
+  <style>
+    .flex_container{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .flex_item{
+      width: 100px;
+      flex-basis: auto;/*width 값 먹음  */
+      flex-basis: 200px;
+    }
+  </style>
+</head>
+<body>
+    <div class="flex_container">
+    <div class="flex_item">asdasd</div>
+    <div class="flex_item">dsadsa</div>
+    <div class="flex_item">qweqasdasdasdwe</div>
+  </div>
+</body>
+</html>

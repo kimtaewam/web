@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Single+Day&display=swap');
+
+@import url('https://www.bokbootlab.com/font-css/euljiro.css');
+
+@import url('https://www.bokbootlab.com/font-css/noonnu-1875.css');
+
+@import url('https://www.bokbootlab.com/font-css/noonnu-1860.css');
+
+@import url('https://www.bokbootlab.com/font-css/noonnu-458.css');
+
+@import url('https://www.bokbootlab.com/font-css/noonnu-432.css');
+
+.fw_1{font-family: 'BMEULJIRO', sans-serif;}
+.fw_2{font-family: 'Dongle', sans-serif;}
+.fw_3{font-family: 'Single Day', sans-serif;}
+.fw_31{font-family: '원주체 Bold', sans-serif;}
+.fw_4{font-family: 'KMU80HaeongSans', sans-serif;}
+.fw_5{font-family: 'TmoneyRoundWindExtraBold', sans-serif;}
+.fw_6{font-family: 'NEXON Lv1 Gothic OTF', sans-serif;}
