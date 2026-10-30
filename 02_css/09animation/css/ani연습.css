@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  background: url(../../images/background.png) no-repeat center;
+  position: fixed;
+  inset: 0;
+}
+
+img {
+  position: absolute;
+}
+
+.viking {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+}
+
+.viking img:nth-child(2) {
+  transform-origin: top center;
+  animation: vikingani 7s infinite;
+}
+
+@keyframes vikingani {
+  0% {
+    transform: rotate(-60deg);
+  }
+
+  50% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+
+.swing {
+  position: absolute;
+  left: 1000px;
+  top: 200px;
+}
+
+.swing img:nth-child(2) {
+  transform-origin: top center;
+  animation: swingani 7s linear infinite;
+}
+
+@keyframes swingani {
+  0% {
+    transform: rotate(-60deg);
+  }
+
+  50% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+
+.train {
+  width: 425px;
+  height: 152px;
+  background: url(../../images/train.png);
+  position: absolute;
+  top: 800px;
+  right: -425px;
+  bottom: 100px;
+  animation: train 20s infinite linear;
+}
+
+@keyframes train {
+  0% {
+    right: -452;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.cloud{
+  position: absolute;
+  width: 270px;
+  height: 120px;
+  background: url(/cloneconding/01animaition/img/flowyullab_cloud_primary.png);
+  top: 700px;
+  right: -270px;
+  animation: cloudani 20s infinite linear;
+}
+
+@keyframes cloudani {
+  0%{right: -260;}
+  100%{right: 100%;}
+}
+
+.cart{
+  width: 126px;
+  height: 130px;
+  background: url(../../images/seat2.png);
+  position: absolute;
+  left: 1000px;
+  top: 600px;
+  animation: cartani 1s infinite;
+}
+
+@keyframes cartani {
+  from{transform: translateY(0);}
+  to{transform: translateY(-100px);}
+  
+}
