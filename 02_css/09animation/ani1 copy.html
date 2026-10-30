@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ani</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation-name: changedg;
+      animation-duration: 3s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+
+    @keyframes changedg {
+      from{
+        background: blue;
+      }
+      to{
+        background: yellowgreen;
+        border: 1px solid khaki;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
