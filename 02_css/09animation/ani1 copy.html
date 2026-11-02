@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ani</title>
+  <title>animation</title>
   <style>
     .box{
       width: 100px;
       height: 100px;
-      background: red;
-      animation-name: box1;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+      background: yellow;
+      animation: boxani 4s infinite linear;
     }
 
-    @keyframes box1 {
-      from{
-        background: red;
+    @keyframes boxani {
+      from{background-color: yellow;
       }
       to{
-        background: burlywood;
-        border: 1px solid green;
+        background: yellowgreen;
+        border: 1px solid yellow;
         border-radius: 50%;
       }
-      
     }
   </style>
 </head>
