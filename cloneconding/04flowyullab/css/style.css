@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Stack+Sans+Text:wght@200..700&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -67,7 +67,7 @@
   --round: 24px;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -80,90 +80,304 @@ body {
   color: var(--yul-brand-ink);
 }
 
-.inner{
-  width: clamp(1600px,80vw,90%);
+.inner {
+  width: clamp(1600px, 80vw, 90%);
   margin-inline: auto;
 }
 
-header{
+header {
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
-  background: rgba(255,250,241,0.28);
+  background: rgba(255, 250, 241, 0.28);
   backdrop-filter: blur(15px);
   display: flex;
+  color: var(--gray-08);
   flex-direction: column;
 }
 
-header.on{
-  background: rgba(23,36,59,0.94);
+header.on {
+  background: rgba(23, 36, 59, 0.94);
+  height: 100%;
+  color: var(--gray-01);
 }
 
-header .inner{
+header .inner {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1{}
-
-header nav{
-  width: 200px;
-  height: 80px;
-  background: red;
+header.on nav {
+  display: none;
 }
 
-header .right{
-  width: 200px;
-  height: 80px;
-  background: blue;
+header nav ul.gnb {
+  display: flex;
 }
 
-main{
+header nav ul.gnb>li {
+  position: relative;
+}
+
+header nav ul.gnb>li>a {
+  display: flex;
+  min-width: 120px;
+  height: 2.667rem;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul.gnb>li:hover>a {
+  color: var(--yul-brand-orange-deep);
+}
+
+header nav ul.gnb>li>ul.sub {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 178px;
+  top: 2.667rem;
+  background: rgba(23, 36, 59, 0.84);
+  backdrop-filter: blur(25px);
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  padding: 1em;
+  gap: 10px;
+}
+
+header nav ul.gnb>li:hover>ul.sub {
+  display: flex;
+}
+
+header nav ul.gnb>li>ul.sub>li>a {
+  color: rgb(233, 233, 233);
+  padding: 0.5em;
+  display: flex;
+  transition: 0.2s;
+}
+
+header nav ul.gnb>li>ul.sub>li:hover>a {
+  color: rgb(252, 249, 211);
+}
+
+header .right {
+  display: flex;
+  gap: 8px;
+}
+
+header .right a {
+  transition: 0.3s;
+}
+
+header .right a:nth-child(1) {
+  background: var(--yul-brand-navy);
+}
+
+header .right a:nth-child(2) {
+  background: var(--yul-brand-orange);
+}
+
+header.on .right a:nth-child(1),
+header.on .right a:nth-child(2) {
+  background: transparent;
+}
+
+header.on .right a:nth-child(1):hover {
+  background: var(--gray-00);
+  color: var(--gray-08);
+}
+
+header.on .right a:nth-child(2):hover {
+  background: var(--yul-brand-orange);
+}
+
+header .ham_menu {
+  width: 100%;
+  display: none;
+}
+
+header.on .ham_menu {
+  display: flex;
+  flex: 1;
+}
+
+header .container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header .container h2 {
+  font-size: 36px;
+  font-weight: 600px;
+  margin-bottom: 1em;
+}
+
+header .container .all_con {
+  width: 100%;
+  color: var(--gray-03);
+}
+
+header .container .all_con ul.list {
+  display: flex;
+}
+
+header .container .all_con ul.list>li {
+  width: 25%;
+  border-left: 1px solid rgb(242, 233, 182, 0.22);
+  padding: 0 2em;
+  margin: 1.5em 0;
+}
+
+header .container .all_con ul.list>li:last-child {
+  border-right: 1px solid rgb(242, 233, 182, 0.22);
+}
+
+header .container .all_con ul.list>li button {
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: var(--gray-00);
+  text-align: left;
+  padding: 0;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+header .container .all_con ul.list>li button::before {
+  content: '';
+  display: inline-block;
+  width: 0%;
+  height: 100%;
+  background: var(--yul-brand-amber);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+header .container .all_con ul.list>li:hover button::before {
   width: 100%;
 }
 
-.main_visual{
+header .container .all_con ul.list>li ul {
+  margin-top: 2em;
+  line-height: 2.4;
+  font-size: 16px;
+}
+
+header .container .all_con ul.list>li ul li:hover a {
+  color: var(--yul-brand-amber);
+}
+
+a.af {
+  font-size: 14px;
+  display: flex;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 40px;
+  color: var(--gray-00);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+a.af::after {
+  content: '→';
+  transform: rotate(-45deg);
+}
+
+header .right ul {
+  width: 40px;
+  height: 40px;
+  padding: 11px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+header .right ul li {
+  width: 23px;
+  height: 2px;
+  background: #000;
+  transition: 0.6s;
+}
+
+header.on .right ul li {
+  background: var(--gray-01);
+  position: absolute;
+  margin-top: -1px;
+  top: 50%;
+}
+
+header.on .right ul li:nth-child(1) {
+  transform: rotate(45deg);
+  left: 22%;
+}
+
+header.on .right ul li:nth-child(2) {
+  display: none;
+}
+
+header.on .right ul li:nth-child(3) {
+  transform: rotate(-45deg);
+  right: 22%;
+}
+
+main {
+  width: 100%;
+}
+
+.main_visual {
   height: 100vh;
   background: #ccc;
   padding-top: 100px;
 }
 
-.main_visual .inner{
+.main_visual .inner {
   height: 100%;
   background: red;
 }
 
-.info{
+.info {
   padding: 80px 0 100px;
 }
 
-.article_top{
+.article_top {
   height: 140px;
   background: var(--gray-02);
   border-radius: 100px;
 }
-.article_bottom{
+
+.article_bottom {
   height: 900px;
   margin-top: 100px;
   background: blue;
 }
 
-.motion{
+.motion {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.motion .inner{
+.motion .inner {
   height: 1000px;
   background: blue;
 }
 
-footer{
+footer {
   height: 400px;
   background: #d3a24d;
 }
