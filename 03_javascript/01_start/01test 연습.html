@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>첫 자스</title>
+</head>
+<body>
+  
+<button type="button" onclick="alert('경고창이 뜸')">클릭하면 경고창 뜸</button>
+<button type="button" class="change_btn">글씨 바꾸기</button>
+<button type="button" class="reset_btn">전체 바꿈</button>
+<button type="button" id="out">외부스크립트</button>
+<p class="change">ㅁㄴㅇㅁㄴㅇ</p>
+
+<script>
+  document.querySelector('.change_btn').onclick = () =>{
+    document.querySelector('.change').innerHTML = '<h2>글씨 바뀜</h2>'
+  }
+</script>
+<script>
+  document.querySelector('.reset_btn').onclick = function (){
+    document.write('<em>자스 어려워요</em>')
+  }
+</script>
+<script src="js/js자스연습.js"></script>
+
+</body>
+</html>
