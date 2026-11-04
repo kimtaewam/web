@@ -1,6 +1,6 @@
 // 1.dlert 예제
 document.getElementById('btn_alert').onclick = () => {
-  alert('이것은 alert()으로 띄운 알림 메세지 입니다')
+  alert('이것은 alert()으로 띄운 알림 메세지 입니다');
 }
 
 // 2.prompt 예제
@@ -18,7 +18,7 @@ document.getElementById('btn_prompt2').onclick = () => {
 }
 
 // 3. confirm 예제
-documentg.getElementById('btn_confirm').onclick = () => {
+document.getElementById('btn_confirm').onclick = () => {
   const isSure = confirm('자바스크립트 할만 하죠?');
   let text = isSure ? '네 할만 합니다.' : '죽을것 같아요.';
   document.getElementById('ioResult').innerHTML = text;
@@ -34,8 +34,8 @@ const sum = Number(num1) + Number(num2); //식 : sum값을 생성
 
 
 document.getElementById('btn_expression').onclick = () => {
-  const resulthtml = output + sum + ' / ' + greeting + ' ' + isAdult;
-  document.getElementById('result_output2').innerHTML = resulthtml;
+  const resultHtml = output + sum + ' / ' + greeting + ' ' + isAdult;
+  document.getElementById('result_output2').innerHTML = resulHhtml;
   document.querySelector('.pre_wrap2').classList.remove('on');
   document.querySelector('.pre_wrap1').classList.add('on');
 }
