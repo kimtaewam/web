@@ -32,7 +32,7 @@ const num1 = prompt('첫번째 숫자를 입력하세요');
 const num2 = prompt('두번째 숫자를 입력하세요');
 const sum = Number(num1) + Number(num2); //식 : sum값을 생성
 
-
+/* 이거 왜 안됌???????? */
 document.getElementById('btn_expression').onclick = () => {
   const resultHtml = output + sum + ' / ' + greeting + ' ' + isAdult;
   document.getElementById('result_output2').innerHTML = resulHhtml;
