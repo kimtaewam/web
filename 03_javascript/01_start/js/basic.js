@@ -35,7 +35,7 @@ const sum = Number(num1) + Number(num2); //식 : sum값을 생성
 /* 이거 왜 안됌???????? */
 document.getElementById('btn_expression').onclick = () => {
   const resultHtml = output + sum + ' / ' + greeting + ' ' + isAdult;
-  document.getElementById('result_output2').innerHTML = resulHhtml;
+  document.getElementById('result_output2').innerHTML = resultHtml;
   document.querySelector('.pre_wrap2').classList.remove('on');
   document.querySelector('.pre_wrap1').classList.add('on');
 }
@@ -51,6 +51,6 @@ document.getElementById('btn_statement').onclick = () => {
     output2 = sum + ' 값이 5이하 입니다';
   }
   document.getElementById('result_output2').innerHTML = output + output2;
-  document.querySelector('.pre_wrap2').classList.remove('on');
-  document.querySelector('.pre_wrap1').classList.add('on');
+  document.querySelector('.pre_wrap1').classList.remove('on');
+  document.querySelector('.pre_wrap2').classList.add('on');
 }
