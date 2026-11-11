@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const box = document.getElementById("Box");
+  const box = document.getElementById("box");
   const triggerBtn = document.getElementById("triggerBtn");
   const log = document.getElementById("log");
 
@@ -48,11 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //7. 마우스를 움직일때 (계속 실행됨)
   box.addEventListener("mousemove", (e) => {
-    console.log(`mousemove x=${e.offsetX}`);
+    console.log(`mousemove x=${e.offsetX}, y=${e.offsetY}`);
   });
 
   //8. 오른쪽 클릭(컨텍스트 메누)
-  box.addEventListener("contextmenu", () => {
+  box.addEventListener("contextmenu", (e) => {
     if (e.cancelable) {
       e.prevntDefault(); //기본 메뉴 막기
       console.log("contextmenu : 오른쪽 클릭-기본메뉴 차단");
