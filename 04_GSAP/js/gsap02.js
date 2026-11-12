@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   //로그 찍는 헬퍼 함수 (몇초지났는지 알려줌)
 
-  function log(msg) {
+   function log(msg) {
     // performance.now() 지금 시각(밀리초, ms 단위)을 가져옴
     // start_time  버튼 눌렀을 때 기록해둔 시각
     // (performance.now() - start_time)  "지금 - 시작" = 얼마나 시간이 흘렀는지 (ms)
     // / 1000  밀리초(ms)를 초(s) 단위로 바꿔주기
     // toFixed(3)  소수점 셋째자리까지 딱 잘라서 보기 좋게 (예: 0.123초)
     const elapsed = ((performance.now() - strat_time) / 1000).toFixed(3);
-    console.log(`${elapsed}=>${msg}`);
+    console.log(`${elapsed} => ${msg}`);
   }
 
   //1. add/ call/ addPause 실험
