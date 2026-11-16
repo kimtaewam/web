@@ -365,7 +365,6 @@ main .more.border:hover{
 
 .main_visual {
   height: 100vh;
-  background: #ccc;
   padding-top: 100px;
 }
 
@@ -379,7 +378,6 @@ main .more.border:hover{
   flex: 1;
   width: 100%;
   border-radius: var(--round);
-  background: red;
 }
 
 .main_visual .swiper li{
@@ -443,11 +441,38 @@ main .more.border:hover{
   width: 300px;
   height: 100px;
   display: flex;
-  background: lightcoral;
   align-items: center;
   justify-content: space-between;
   align-self: center;
 }
+
+.pager button{
+  border: 0;
+  background: transparent;
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.pager button:hover{
+  color: var(--black);
+}
+
+.pager .box{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.pager .box .btn_box{
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .txt_area .more{
   margin-top: auto;
 }
@@ -460,12 +485,100 @@ main .more.border:hover{
   height: 140px;
   background: var(--gray-02);
   border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 34px;
 }
+
+.article_top .slide{
+  max-width: 1300px;
+  width: calc(100% - 210px);
+  height: 80px;
+}
+
+.article_top .slide .swiper{
+  height: 100%;
+}
+
+.article_top .slide .swiper li{
+  height: 100%;
+}
+
+.article_top .slide .swiper li a{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-inline: 20px;
+}
+
+.article_top .slide .swiper li a .txt{
+  width: 67%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.article_top .more span{
+  font-size: 28px;
+  stroke-width: 300;
+}
+
 
 .article_bottom {
   height: 900px;
   margin-top: 100px;
   background: blue;
+  display: flex;
+  gap: 20px;
+}
+
+.article_bottom .box{
+  border-radius: var(--round);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+  height: 100%;
+  background: green;
+}
+
+.article_bottom .more{
+  height: 56px;
+  font-size: 16px;
+  color: var(--gray-08);
+}
+
+.article_bottom img{position: absolute;}
+
+.article_bottom .box1{
+  flex: 1;
+}
+
+.article_bottom .box2{flex: 2;}
+.article_bottom .box3{flex: 1;}
+.article_bottom .box4{flex: 1;}
+.article_bottom .box5{flex: 1;}
+
+.article_bottom .box_all{
+  flex: 3;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article_bottom .box_all>div{
+  flex: 1;
+  width: 100%;
+  background: #c9c0ae;
+  display: flex;
+  gap: 20px;
 }
 
 .motion {
