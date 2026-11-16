@@ -347,7 +347,111 @@ main {
 
 .main_visual .inner {
   height: 100%;
+  display: flex;
   background: red;
+}
+
+.main_visual .swiper {
+  flex: 1;
+  width: 100%;
+  border-radius: var(--round);
+}
+
+.main_visual .swiper li {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: no-repeat center/cover url(../img/yul-main-hero-ai-coding.png);
+}
+
+.main_visual .swiper li.slide1 {
+  background-image: url(../img/yul-main-hero-education.png);
+}
+
+.main_visual .swiper li.slide2 {
+  background-image: url(../img/yul-main-hero-design.png);
+}
+
+.main_visual .swiper li.slide3 {
+  background-image: url(../img/yul-main-hero-ai-coding.png);
+}
+
+.main_visual .swiper li.slide4 {
+  background-image: url(../img/yul-main-hero-publishing.png);
+}
+
+.main_visual .swiper li .txt_area{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 100px 0 100px 100px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: var(--gray-00);
+  text-shadow: 0 3px 24px rgba(59,46,23,0.72);
+}
+
+.sub_txt{
+  color: var(--gray-02);
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.txt_area .tit{
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 32px 0 38px;
+}
+
+.txt_area .txt{
+  color: var(--gray-02);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.3;
+  opacity: 0.9;
+}
+
+.txt_area .more{
+  margin-top: auto;
+}
+
+.main_visual .pager{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.pager button{
+  border: 0;
+  background: transparent;
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.pager button:hover{
+  color: var(--black);
+}
+
+.pager .box{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.pager .box .btn_box{
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
@@ -359,6 +463,13 @@ main {
   background: var(--gray-02);
   border-radius: 100px;
 }
+
+.article_top .slide{}
+.article_top .slide .swiper{}
+.article_top .slide .swiper li{}
+.article_top .slide .swiper li a{}
+.article_top .slide .swiper li a .txt{}
+.article_top .more span{}
 
 .article_bottom {
   height: 900px;
