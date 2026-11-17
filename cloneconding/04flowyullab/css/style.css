@@ -776,6 +776,147 @@ transform-origin: 35% 50%;
   100%{transform: rotate(360deg);}
 }
 
+.tit_eng{
+  margin-bottom: 40px;
+  color: var(--gray-09);
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.learning{
+  padding: 100px 0;
+}
+
+.learning ul{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  gap: 20px;
+}
+
+.learning ul li{
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  padding: 34px;
+  border-radius: var(--round);
+  background-color: var(--yul-brand-orange);
+  transition: flex 0.3s;
+  color: var(--gray-00);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learning ul li:hover{
+  flex: 3;
+}
+
+.learning ul li img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.learning ul li:hover img{
+  opacity: 0.2;
+}
+
+.learning ul li h3{
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  transform: rotate(90deg) translateY(-20deg);
+  transform-origin: left center;
+}
+
+.learning ul li:hover h3{
+  transform: rotate(0deg) translateY(0deg);
+}
+
+.learning ul li .txt{
+  position: relative;
+  font-size: 16px;
+  display: none;
+}
+
+.learning ul li:hover .txt{
+  display: block;
+}
+
+.learning ul li .txt em{
+  display: block;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.learning ul li .txt p{
+  margin-bottom: 80px;
+  line-height: 1.6;
+  font-weight: 200;
+}
+
+.learning ul li .txt a{
+  width: auto;
+  height: 60px;
+  display: inline-flex;
+}
+
+.learning ul li::after{
+  content: '+';
+  display: flex;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--gray-00);
+  border-radius: 50%;
+  font-weight: 100;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+}
+
+.learning ul li:hover:after{
+  display: none;
+  align-self: flex-end;
+}
+
+.con{
+  padding: 120px 0 0;
+  background: var(--gray-01);
+}
+
+.con .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-bottom: 42px;
+}
+
+.con .tit_eng{
+  margin-bottom: 0;
+}
+
+.con .inner a.more{
+  width: 160px;
+  height: 56px;
+  border: 1px solid var(--gray-02);
+  transition: 0.2s;
+}
+
+.con .inner a.more:hover{
+  border-color: var(--gray-03);
+}
+
 footer {
   height: 400px;
   background: #32E0BD;
