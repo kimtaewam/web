@@ -341,14 +341,13 @@ main {
 
 .main_visual {
   height: 100vh;
-  background: #ccc;
   padding-top: 100px;
 }
 
 .main_visual .inner {
   height: 100%;
   display: flex;
-  background: red;
+  flex-direction: column;
 }
 
 .main_visual .swiper {
@@ -462,6 +461,10 @@ main {
   height: 140px;
   background: var(--gray-02);
   border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 34px;
 }
 
 .article_top .slide{}
