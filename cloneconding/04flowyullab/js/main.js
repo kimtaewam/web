@@ -58,7 +58,7 @@ const setPager = () => {
 setPager();
 
 //슬라이드가 바뀔때마다 번호도 다시 바꿉니다
-mainSlide.on('slideChange', setPager);
+mainlide.on('slideChange', setPager);
 
 //공지 영역의 세로 슬라이드
 const infoSlide = new Swiper('.article_top .slide .swiper', {
