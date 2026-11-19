@@ -1199,7 +1199,7 @@ footer {
 }
 
 footer .f_top {
-  dominant-baseline: var(--font-Eng);
+  display: flex;
   justify-content: space-between;
 }
 
@@ -1326,6 +1326,7 @@ footer .f_top button:hover {
 .top a {
   width: 100px;
   height: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 16px;

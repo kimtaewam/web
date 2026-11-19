@@ -378,7 +378,8 @@
   }
 
   .curriculum span{
-    font-size: 12px
+    font-size: 12px;
+    display: none;
   }
 
   .curriculum .list_box{
