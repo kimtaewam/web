@@ -24,9 +24,9 @@ window.addEventListener('scroll', () => {
   // console.log('currentScrollY')
 
   //지금 위치가 직전 위치보다 크면 아래로 스크롤 준다.
-  if(currentScrollY>lastScrollY){
-    header.style.top ='-100px'
-  }else{
+  if (currentScrollY > lastScrollY) {
+    header.style.top = '-100px'
+  } else {
     header.style.top = 0;
   }
   //다음 스크롤때 비교할수 있도록 위치 저장.
@@ -86,7 +86,7 @@ const setPager = () => {
 setPager();
 
 //슬라이드가 바뀔때마다 번호도 다시 바꿉니다
-mainlide.on('slideChange', setPager);
+mainSlide.on('slideChange', setPager);
 
 //공지 영역의 세로 슬라이드
 const infoSlide = new Swiper('.article_top .slide .swiper', {
@@ -112,6 +112,25 @@ const contentsSlide = new Swiper('.contents .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
+  //화면 크기별로 카드 사이 간격과 흐르는 속도를 바꿉니다.
+  breakpoints: {
+    0: {
+      speed: 6500,
+      spaceBetween: 16,
+    },
+    501: {
+      speed: 7200,
+      spaceBetween: 20,
+    },
+    769: {
+      speed: 8200,
+      spaceBetween: 24,
+    },
+    1161: {
+      speed: 9000,
+      spaceBetween: 30,
+    },
+  },
   on: {
     //계속 같은 속도로 흐르게 linear를 적용
     init: function () {
@@ -135,6 +154,24 @@ const blogSlide = new Swiper('.blog .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    0: {
+      speed: 8000,
+      spaceBetween: 16,
+    },
+    501: {
+      speed: 9000,
+      spaceBetween: 20,
+    },
+    769: {
+      speed: 10500,
+      spaceBetween: 24,
+    },
+    1161: {
+      speed: 12000,
+      spaceBetween: 30,
+    },
+  },
   on: {
     //계속 같은 속도로 흐르게 linear를 적용
     init: function () {
@@ -145,6 +182,28 @@ const blogSlide = new Swiper('.blog .swiper', {
     },
   },
 });
+
+//화면 크기가 바뀌면 카드 너비와 슬라이드 위치가 달라집니다.
+//그래서 swiper에게 다시 계산하라고 알려주는 함수를 씁니다.
+const updateResponsiveSlide = ()=>{
+  [mainSlide,infoSlide,blogSlide,contentsSlide].forEach((slide)=>{
+    slide.update();
+  })
+};
+
+//리사이즈 중에는 계산을 계속하지 않고, 잠깐 멈춘 뒤 한번만 계산합니다.
+let resizeTimer;
+window.addEventListener('resize',()=>{
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(updateResponsiveSlide,120);
+});
+
+
+
+
+
+
+
 
 document.querySelector('.select_box button').addEventListener('click', () => {
   document.querySelector('.select_box').classList.toggle('on');
