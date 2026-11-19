@@ -1176,6 +1176,50 @@ main .more.border:hover {
 }
 
 footer {
-  height: 400px;
-  background: #32E0BD;
+  background: var(--gray-09);
+  width: 100%;
+  padding: 60px 0 100px;
+  color: var(--gray-00);
+}
+
+footer .f_top {
+  dominant-baseline: var(--font-Eng);
+  justify-content: space-between;
+}
+
+footer .f_top .logo_box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer .f_top .logo_box .logo {
+  font-size: 2.3rem;
+  font-family: var(--font-Eng2);
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+footer .f_top .logo_box .logo_b {
+  display: flex;
+  gap: 50px;
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+footer .f_top .btn_box{
+  
+}
+
+footer .f_top .btn_box a,
+footer .f_top button{}
+
+footer .f_top .btn_box a:hover,
+footer .f_top button:hover{}
+
+footer .f_bottom {
+  margin-top: 80px;
+  height: 100px;
+  background: #fff;
 }

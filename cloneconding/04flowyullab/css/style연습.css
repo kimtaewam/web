@@ -535,6 +535,13 @@ align-items: center;
 }
 
 footer {
-  height: 400px;
-  background: #d3a24d;
+  background: var(--gray-09);
+  width: 100%;
+  padding: 60px 0 100px;
+  color: var(--gray-00);
+}
+
+footer .f_top{}
+footer .f_bottom{
+  margin-top: 80px;
 }

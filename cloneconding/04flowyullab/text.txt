@@ -266,7 +266,6 @@ Blog
 article
 smart_display
 유관 채널
-keyboard_arrow_up
 유튜브 채널
 GitHub
 Blog
