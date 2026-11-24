@@ -131,6 +131,8 @@ a.more .plus::after {
   position: relative;
 }
 
+/* best_product */
+
 .best_product {
   margin-block: 50vh;
 }
@@ -166,6 +168,7 @@ a.more .plus::after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  transition-duration: 1s;
 }
 
 .best_product .rigth_box ul li {
