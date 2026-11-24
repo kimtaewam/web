@@ -168,7 +168,6 @@ a.more .plus::after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  transition-duration: 1s;
 }
 
 .best_product .rigth_box ul li {
@@ -176,6 +175,7 @@ a.more .plus::after {
   height: 40%;
   border-radius: 50px;
   background: url(../asset/img/product01.jpg) center/cover;
+  transition: 5s;
 }
 
 .best_product .rigth_box ul li:nth-child(2n) {
@@ -309,7 +309,7 @@ a.more .plus::after {
 .instagram {
   margin-top: 150px;
   height: 100vh;
-  columns: var(--w-color);
+  color: var(--w-color);
   font-size: 2rem;
   font-family: var(--Roboto-serif);
   overflow: hidden;
